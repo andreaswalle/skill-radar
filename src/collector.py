@@ -46,7 +46,10 @@ def hole_stellenanzeigen(thread_id, max_anzeigen=100):
     anzeigen = []
     for hit in hits:
         text = hit.get("comment_text", "")
-        if text and len(text) > 100:
+        parent_id = hit.get("parent_id")
+        story_id = hit.get("story_id")
+        
+        if text and len(text) > 100 and parent_id == story_id:
             anzeigen.append({
                 "thread_id": thread_id,
                 "text": text,

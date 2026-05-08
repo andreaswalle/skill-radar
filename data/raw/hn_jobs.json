@@ -1,21 +1,9 @@
 [
   {
     "thread_id": "47975571",
-    "text": "Please save yourself the time and don&#x27;t spend a lot of time applying.<p>Just random generic rejection messages , they are not what they pretend to be.",
-    "autor": "mightymosquito",
-    "datum": "2026-05-08T16:15:16Z"
-  },
-  {
-    "thread_id": "47975571",
-    "text": "As an engineer in Canada, I&#x27;m quite frustrated by US-only when it&#x27;s a remote job and we have the same time zones and culture. It&#x27;s so easy to employ Canadians either as a contractor or through a proxy like Rippling. I think it&#x27;s easier than employing people in the US.<p>Is there a reason you limit it to the US only?",
-    "autor": "slashdev",
-    "datum": "2026-05-08T15:15:28Z"
-  },
-  {
-    "thread_id": "47975571",
-    "text": "Oh that was only <i>after</i> the one that did amount to an interview. I otherwise had to reach out to people individually to hear anything at all.<p>I <i>also</i> applied there some three or so times, and didn&#x27;t get those either.",
-    "autor": "chaosharmonic",
-    "datum": "2026-05-08T13:21:21Z"
+    "text": "Turquoise| Platform Operations Engineers| Remote, USA<p>Turquoise a series C healthtech company is recruiting for two platform engineers to join the newly created platform operations team. You can expect to work closely with our Data Engineering team based in Europe, drive observability, define the metrics for reliability and help to share our platform infrastructure.<p>Click on one of the following links best aligned with your exp to apply:<p>Platform Operations Engineer-<a href=\"https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;turquoise-health&#x2F;f4bcb7df-4e4b-468d-94af-d651b548fb81\" rel=\"nofollow\">https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;turquoise-health&#x2F;f4bcb7df-4e4b-468d...</a><p>Senior Platform Operations Engineer-<a href=\"https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;turquoise-health&#x2F;f6a6e00f-c383-4f3e-806d-8e360041d3d6\" rel=\"nofollow\">https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;turquoise-health&#x2F;f6a6e00f-c383-4f3e...</a>",
+    "autor": "talent-ninja",
+    "datum": "2026-05-08T17:36:09Z"
   },
   {
     "thread_id": "47975571",
@@ -25,33 +13,15 @@
   },
   {
     "thread_id": "47975571",
-    "text": "This seems right down our alley. Our team is currently working on several AI and robotics projects, including some extremely custom robotics ones.<p>We would love to take this up.",
-    "autor": "shivaexr",
-    "datum": "2026-05-08T13:05:20Z"
-  },
-  {
-    "thread_id": "47975571",
     "text": "HelpMyCash | Senior AWS DevOps&#x2F;SRE contractor | Remote EU&#x2F;CET | Freelance + paid on-call<p>HelpMyCash is a Barcelona-based financial comparison platform. We&#x27;re looking for a senior freelance DevOps&#x2F;SRE to act as the operational safety net for a mature AWS production platform.<p>This is explicitly an insurance role: keep the platform reliable, no major evolution or greenfield work. The platform has run reliably for years (no critical outages unrelated to deploys&#x2F;changes in 5+ years) — we want someone to keep it that way.<p>Engagement:\n~4h&#x2F;week retainer\npaid on-call for critical incidents\nplanned&#x2F;larger tasks quoted separately\nfully remote, EU&#x2F;CET, reachable during Spanish business hours<p>Compensation: retainer + hourly rate + on-call premium for out-of-hours response. Exact structure and rates open to discussion based on your model.<p>Work: monitoring, alert triage, routine maintenance, incident response, certificates&#x2F;security updates, and infrastructure decision-support. No application development or architecture ownership expected.<p>Stack: AWS Elastic Beanstalk, ECS, Lambda, RDS, ElastiCache, Redshift, S3, SQS, CloudFront, WAF, Route 53, IAM, CloudWatch; MongoDB Atlas, Elastic Cloud, n8n, Metabase, Sentry, Bitbucket Pipelines.<p>Looking for someone senior who can handle incidents independently and is comfortable with a stable-platform maintenance&#x2F;on-call role.<p>Apply: <a href=\"https:&#x2F;&#x2F;uilab-n8n.helpmycash.com&#x2F;form&#x2F;devops-application?source=hn\" rel=\"nofollow\">https:&#x2F;&#x2F;uilab-n8n.helpmycash.com&#x2F;form&#x2F;devops-application?sou...</a> (full job description linked from the form).",
     "autor": "it_hmc",
     "datum": "2026-05-08T10:38:41Z"
   },
   {
     "thread_id": "47975571",
-    "text": "Atleast you got a response; I have applied thrice over here, but they never bothered to even send an automated rejection.",
-    "autor": "ILoveHorses",
-    "datum": "2026-05-08T07:20:58Z"
-  },
-  {
-    "thread_id": "47975571",
     "text": "HME Technologies | AI Operations Lead | REMOTE | Full-Time | $40k-$75k base + Bonus<p>HME Technologies (<a href=\"https:&#x2F;&#x2F;hmetech.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;hmetech.com&#x2F;</a>) is a small, profitable media and affiliate marketing company. We build audiences, sell sponsorships, and run a growing portfolio of content properties across YouTube and emerging platforms. We&#x27;re operator-run, AI-native, and looking for our first AI Operations Lead to work directly with the co-founder to turn our AI capabilities into a serious operational advantage.<p><i>What you will do:<p>&gt; Build the short-form engine: Design and run an AI-leveraged workflow to repurpose years of long-form content into 50-100 pieces&#x2F;week for TikTok, Reels, and Shorts.<p>&gt; Stand up owned analytics: Move us off spreadsheets and partner dashboards. Build clear tracking for email growth, content performance, and affiliate attribution.<p>&gt; Be the AI execution engine: Build automations (Make, Zapier, n8n) and write Python or JavaScript when needed to glue systems together.<p>&gt; Operationalize AI internally: Build practical AI workflows for our creative directors, salespeople, and content producers to speed up their output.<p></i>What we are looking for:<p>- You ship: You aren&#x27;t just &quot;AI-curious&quot;—you use Claude, ChatGPT, and automation tools to do real work every week.<p>- You operate: You can take a directive like &quot;we need a thing that does X&quot; and come back with a finished system, making the small decisions along the way.<p>- You write: We work async. We use Slack, Notion, and Google Docs. If your default is to schedule a meeting, this is the wrong role.<p>Our culture:\nAsync-first, zero bureaucracy, and a sustainable pace. We don&#x27;t do crunch culture, we respect off-hours, and we completely pause work for Shabbat (Friday sundown to Saturday night). Sustained operators need sustained rest.<p>How to apply:<p>Fill out our application form here: https: <a href=\"https:&#x2F;&#x2F;tally.so&#x2F;r&#x2F;b5Nbe1\" rel=\"nofollow\">https:&#x2F;&#x2F;tally.so&#x2F;r&#x2F;b5Nbe1</a><p>Full JD: <a href=\"https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1dP5-nrLAaGIMzkCSSdLyj78FWQsQWvGYmXCXv-pZ9pk&#x2F;edit?tab=t.0#heading=h.fhsz7xwl7o6p\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1dP5-nrLAaGIMzkCSSdLyj78F...</a><p>Please do not send a resume. If we&#x27;re interested, you will do a paid project (4-8 hours of work, solving a real problem we have). We pay you for your time whether we hire you or not. If it&#x27;s a fit, we move fast.",
     "autor": "HMETechnologies",
     "datum": "2026-05-08T07:02:43Z"
-  },
-  {
-    "thread_id": "47975571",
-    "text": "You have Canada + USA in the title, however the senior product software developer role&#x27;s application asks for Canadian work eligibility. Is this role eligible for Canada and USA or just Canada?",
-    "autor": "take_a_trip",
-    "datum": "2026-05-08T00:45:34Z"
   },
   {
     "thread_id": "47975571",
@@ -91,21 +61,9 @@
   },
   {
     "thread_id": "47975571",
-    "text": "Hi, the form is closed, however, the role looks interested and I would love to be considered. I am local to San Diego, currently a MSCS student at UCSD with 2+ years of industry experience in ML Systems and Fintech. You can find more about my experience at <a href=\"https:&#x2F;&#x2F;kubershahi.github.io&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;kubershahi.github.io&#x2F;</a>",
-    "autor": "prasid74",
-    "datum": "2026-05-07T10:39:02Z"
-  },
-  {
-    "thread_id": "47975571",
     "text": "Liquid Blade | Technical Lead (Fractional) | REMOTE | Success-Fee &#x2F; Milestone-based<p>Assembling a small team for phased deployment of high-density GPU infrastructure. We have vertically integrated EPC&#x2F;renewables and specialized construction partners already in place.<p>Current needs:<p>Validating site-specific power and thermal constraints.<p>Reviewing rack density assumptions (HGX&#x2F;H100&#x2F;H200).<p>Supporting technical discussions with colo and hardware vendors.<p>Advising on liquid cooling &#x2F; CDU &#x2F; RDHx deployment.<p>Ideal background: HGX&#x2F;H100&#x2F;H200 infrastructure, high-density colo deployments, liquid cooling, or thermal-power integration.<p>Terms: Open to fractional, advisory, or milestone-based structures. Compensation tied to execution milestones, not billable hours. We move on data.<p>Contact: tim@liquidblade.com",
     "autor": "liquidblade",
     "datum": "2026-05-07T02:02:32Z"
-  },
-  {
-    "thread_id": "47975571",
-    "text": "This post says the deadline to submit is 12pm on May 11th, but the Github pages shows Sunday as the submission deadline and that the winner is selected on Monday. Just checking to make sure! Thanks",
-    "autor": "feelixs",
-    "datum": "2026-05-07T00:58:07Z"
   },
   {
     "thread_id": "47975571",
@@ -118,12 +76,6 @@
     "text": "ChainSecurity | Blockchain Security Engineer | Full-time | INTERNS , HYBRID&#x2F;REMOTE, Zurich, Switzerland | VISA possible | <a href=\"https:&#x2F;&#x2F;chainsecurity.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;chainsecurity.com&#x2F;</a><p>ChainSecurity is a young and innovative cybersecurity company that operates in the blockchain and cryptocurrency space. Our mission is to make the blockchain space secure and trustworthy for people, companies, and governments alike. We are proud of our security experts from the renowned universities ETH Zurich, EPFL Lausanne and others.<p>We are trusted by 100+ blockchain companies and established corporations with security audits and services. We have secured complex systems for top blockchain clients, such as decentralized finance (DeFi) projects, and multinational organizations, such as banks and industrial consortia. A ChainSecurity Auditor will review the most complex blockchain projects to find vulnerabilities which no-one else can. By using state of the art tools, expert knowledge and a deep understanding of the fundamentals, we secure projects handling billions, often forming the foundation in the new paradigm of an open financial system.<p>Your Responsibilities:<p>* Work directly with the developers of the most successful teams in the blockchain industry to audit their code and secure their products<p>* Contribute to our security tools and create new ones in collaboration with our internal research team<p>* Conduct security research and publish your findings<p>Requirements:<p>* Strong background in software engineering, focused on security relevant areas and most importantly being able to reason about complex code<p>* Experience with penetration testing, vulnerability scanning, threat modeling or similar is a plus<p>* Good knowledge of cryptography<p>* Proficiency with Linux and Git<p>* Good written communication skills<p>* Fluent in OOP programming language<p>Bonus Points:<p>* Formal Verification, White Box, Vulnerability Scanning<p>* Solid Blockchain Knowledge<p>* Consensus Algorithms<p>Join us here: <a href=\"https:&#x2F;&#x2F;www.chainsecurity.com&#x2F;jobs&#x2F;blockchain-security-engineer\" rel=\"nofollow\">https:&#x2F;&#x2F;www.chainsecurity.com&#x2F;jobs&#x2F;blockchain-security-engin...</a><p>Questions about the role? Contact: jobs@chainsecurity.com",
     "autor": "wipaveeknecht",
     "datum": "2026-05-06T21:40:00Z"
-  },
-  {
-    "thread_id": "47975571",
-    "text": "FYI, this place says they value transparency but have an explicit policy against providing feedback after interviews. (They <i>did</i> take my documentation PR after the fact.)<p>Attempting to network with people here led them to promise me at least a response (since these roles were still open, and have been), but they ghosted me then -- only to blindside me about it over a year later, when interviewing me for a different role.<p>And while they&#x27;re not the only place ever to grill me about a bad experience at a prior employer, they <i>are</i> the only place ever to explicitly ask me to tell them something I didn&#x27;t like about one. Or to rate a previous boss (horrible or otherwise) on a scale of 1 to 10.<p>This, by the way, was all while I accommodated an overseas recruiter by taking an interview at 7pm on a Sunday.<p>I don&#x27;t at all feel like I encountered the same level of respect, and while I was genuinely interested in their stated values (including but not limited to their value proposition) and their subject matter, based on my actual interactions with them I really can&#x27;t recommend applying here.",
-    "autor": "chaosharmonic",
-    "datum": "2026-05-06T20:45:55Z"
   },
   {
     "thread_id": "47975571",
@@ -166,36 +118,6 @@
     "text": "*Labor Solutions (YC-style) | Senior Software Engineer | Remote (India) | Full-time*<p>We run a worker wellbeing and compliance platform used by global buyers and their supply chain sites across Asia. We&#x27;re in the middle of a meaningful migration and platform buildout — you&#x27;d be joining at a point where architectural decisions matter and your fingerprints will be on the system for years.<p>*The work:*\nOur stack is Django + Python on the backend, dbt for data transformation, React&#x2F;Next.js on web, and Expo&#x2F;React Native for mobile. We run on AWS and Azure. Right now we&#x27;re migrating legacy services while simultaneously shipping new features — so you&#x27;ll need to be comfortable holding both in your head.<p>*What we&#x27;re looking for:*<p>- Strong Python&#x2F;Django chops — you&#x27;ve built and maintained production APIs, not just tutorials\n- Comfortable with React&#x2F;Next.js; bonus if you&#x27;ve touched Expo or React Native\n- You understand what a data pipeline actually does (dbt experience a plus, but SQL fluency matters more)\n- Cloud experience on AWS or Azure — not ops, but enough to not be blocked\n- You care about code quality without being precious about it<p>*What this isn&#x27;t:*\nThis isn&#x27;t a greenfield startup with infinite runway. It&#x27;s a real product with real users, real technical debt, and a migration in progress. If that sounds like a problem, this role isn&#x27;t for you. If that sounds like the most interesting kind of work, let&#x27;s talk.<p>*Details:*\n- Fully remote, India-based\n- Senior Software Engineer title<p>Apply: abhishek dot baddi at laborsolutions dot tech | mention HN in the subject",
     "autor": "abybaddi009",
     "datum": "2026-05-06T15:23:08Z"
-  },
-  {
-    "thread_id": "47975571",
-    "text": "Hey! Love your tool and just applied for the sales role - I actually had a few specific ideas and strategies and made a mini-plan if you&#x27;re interested in connecting",
-    "autor": "Wazflame",
-    "datum": "2026-05-06T11:51:21Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "I prefer to go gor full stack engineer, I can cover all the job areas but full stack enables front, back, and cloud and ci&#x2F;cd and infrastructure as code. Taking ownership or work in a team that is good.",
-    "autor": "fullstackserv",
-    "datum": "2026-04-27T15:42:17Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "I prefer to go gor full stack engineer, I can cover all the job areas but full stack enables front, back, and cloud and ci&#x2F;cd for me.",
-    "autor": "fullstackserv",
-    "datum": "2026-04-27T15:41:37Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "Hey Corey,\nJust applied. This role seems to be a good fit based on my background -- let me know if you&#x27;d like to get in touch and discuss more. \nCheers",
-    "autor": "divyekalra1",
-    "datum": "2026-04-20T03:06:37Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "Hey! I believe I&#x27;ve been posting this (not verbatim, it&#x27;s been evolving) almost every month since 2020 - we&#x27;ve been actively hiring since, and we are still hiring.",
-    "autor": "cube2222",
-    "datum": "2026-04-16T17:51:54Z"
   },
   {
     "thread_id": "47601859",
@@ -271,18 +193,6 @@
   },
   {
     "thread_id": "47601859",
-    "text": "Your $42M raise + doubling from 20 to 40 engineers is exactly when module ownership gaps create delivery lag — especially in a TypeScript&#x2F;GraphQL stack where async insurance workflow pipelines need isolated ownership.\nWe&#x27;re HiQByte, an architecture-first engineering agency that augments engineering teams on specific modules without onboarding drag. If you&#x27;re evaluating contracted engineering alongside FTE hiring, worth 15 minutes.",
-    "autor": "HiqByte",
-    "datum": "2026-04-14T12:58:01Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "I&#x27;m working on something similar, which is directly relevant to Hyperspell. Applied and reached out at the email!",
-    "autor": "divsh17",
-    "datum": "2026-04-14T10:14:51Z"
-  },
-  {
-    "thread_id": "47601859",
     "text": "SEEKING | AI&#x2F;ML Engineer | Auburn AL → SF&#x2F;Seattle&#x2F;NYC&#x2F;Remote | \nF-1 STEM OPT through Feb 2028 (no sponsorship needed)<p>4 yrs production GenAI: AWS Bedrock RAG (92% recall, HIPAA), \nLangGraph multi-agent copilots shipped to prod, QLoRA&#x2F;LLaMA 2 \nfine-tuning, LangChain&#x2F;LlamaIndex, Python, Docker&#x2F;K8s.<p>Co-author ACL 2024 (healthcare AI). MS Data Science UNT 2024.\nCurrently ML Research Scientist @ Auburn (multi-agent VLMs).<p>Open to: Applied Scientist &#x2F; ML Eng &#x2F; GenAI Eng &#x2F; AI Eng<p>Email: ksaimanikanta4@gmail.com\nGitHub: github.com&#x2F;saikasireddy\nResume: [<a href=\"https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1pjp-I0XfRP96fxu-nbIdOAVQTCk4fc2M&#x2F;edit?usp=drive_link&amp;ouid=118368742676117958462&amp;rtpof=true&amp;sd=true\" rel=\"nofollow\">https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1pjp-I0XfRP96fxu-nbIdOAVQ...</a>]",
     "autor": "ksaimanikanta45",
     "datum": "2026-04-14T00:19:37Z"
@@ -319,12 +229,6 @@
   },
   {
     "thread_id": "47601859",
-    "text": "For a product like this, I’d guess a lot of the upside sits in lifecycle, activation, habit formation, upgrade, and winback, not just top-of-funnel growth. That’s exactly where ScaleRep fits, AI agents that run CRM and lifecycle marketing on autopilot so the team gets continuous personalization, testing, and orchestration without a lot of manual campaign work. If useful, happy to share how we’d think about supporting a Head of Marketing here as the execution layer rather than adding more lifecycle&#x2F;ops hires.",
-    "autor": "scalerepai",
-    "datum": "2026-04-13T15:49:46Z"
-  },
-  {
-    "thread_id": "47601859",
     "text": "VozParking | Founding Engineer &#x2F; Technical Cofounder | Netherlands &#x2F; Europe &#x2F; REMOTE | Equity<p>VozParking is an early-stage mobility startup focused on helping drivers make faster, clearer parking decisions under pressure.<p>This is not meant to replace Google Maps or Waze. It’s a parking decision layer that sits on top of navigation tools, with voice as an important part of the interaction model to reduce phone use while driving.<p>Current stage:<p>early prototype exists\ncore product logic is clear\nnext milestone is a usable, testable MVP<p>Looking for:<p>a genuinely hands-on founding engineer &#x2F; technical cofounder\nstrong builder mindset\ncomfortable across product + engineering\ninterested in real-world interaction, systems, and usability challenges\nwants to build long-term, not freelance or advisory-only<p>If aligned, email: danielceo@vozparking.com\nPlease include a short intro, what you’ve built, and how you like to work in early-stage products.",
     "autor": "danielromerofi",
     "datum": "2026-04-13T10:20:32Z"
@@ -346,24 +250,6 @@
     "text": "Confluence | hourly consultant | remote<p>Research analyst (non-technical) looking for someone to help bridge the gap on some of the more technical aspects on neoclouds.<p>Hands on experience with bare metal CPU vendors are&#x2F;or modern AI oriented neocloud vendors (eg H100 chips) ideal.<p>Interested in views from a customer perspective as well as operators.  Part time hourly work (US$100-300&#x2F;hr). Happy to be flexile on timing around a primary job.<p>quinn at confluenceresearch dot com dot au",
     "autor": "confluence_res",
     "datum": "2026-04-11T20:26:05Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "Hi,<p>&quot;please reach out to me by email at my first name at againstmalaria.com&quot;<p>which name exactly? it is not clear from the website also.<p>Below is the summary of the proposal which i have sent to the email address: \nSoftwareEngineer2025@againstmalaria.com\nSoftwareEngineer2026@againstmalaria.com<p>Not UK-based (India, remote) but wanted to reach out regardless given the nature of the work.<p>Sent a detailed email which covers what I understand about your system, a modernization \nproposal that doesn&#x27;t disrupt operations, some donor engagement \nfeature ideas and compensation expectations.<p>Background: systems architect, AI-directed development, molecular \ndiagnostics and lab automation domain.",
-    "autor": "ashuein47",
-    "datum": "2026-04-11T20:17:21Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "Hi, The role seems to be great fit for me. I just applied. Please do take a look at my profile and reach out to me if you any questions. Looking forward to hearing from you",
-    "autor": "kishan_09",
-    "datum": "2026-04-11T18:04:24Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "This looks so suspicious. Why does the application link redirect to a random website and not to the company&#x27;s careers page?",
-    "autor": "ILoveHorses",
-    "datum": "2026-04-11T09:57:03Z"
   },
   {
     "thread_id": "47601859",
@@ -409,12 +295,6 @@
   },
   {
     "thread_id": "47601859",
-    "text": "I&#x27;ve been seeing this post since September last year. Are you even hiring? I&#x27;ve applied multiple times but never received any response, not even an automated rejection. I have a feeling this is just a bot post.",
-    "autor": "ILoveHorses",
-    "datum": "2026-04-10T02:52:03Z"
-  },
-  {
-    "thread_id": "47601859",
     "text": "RDE Advisors | Senior Full-Stack Engineer | REMOTE (Europe, LatAm, India) | CONTRACT | $4K–6K USD&#x2F;mo<p>We&#x27;re a boutique commercial real estate advisory in NYC building two production web applications: a CRE search platform and a property management platform with QuickBooks integration. Both are live with real users. Stack is Next.js 14, TypeScript, Supabase&#x2F;Postgres, Prisma, Anthropic Claude API, Mapbox, Vercel + Contabo.<p>Hiring one senior full-stack engineer to take both products from early-stage to production-mature. You&#x27;ll work directly with the founder — no engineering managers, no PMs, no committees. 35–40 hrs&#x2F;week, 6-month minimum, exclusive. Rate is $4,000–5,000 USD&#x2F;mo for India-based engineers and $5,000–6,000 USD&#x2F;mo for engineers in Europe or Latin America.<p>Requirements: 5+ years full-stack, 3+ shipping production web apps, strong Next.js&#x2F;React + TypeScript, shipped at least one production LLM integration (Claude preferred, OpenAI fine), 2+ hours daily overlap with NYC, available for a 30-min video check-in every weekday at 9:30am ET. This is a product engineering role that calls the Claude API, not an ML&#x2F;research role.<p>Non-negotiables: you personally write 100% of the code (no subcontracting, no &quot;my team&quot;), video on for all calls, personal verified GitHub, Hubstaff time tracking, ID check + one prior-client video reference before contract signing.<p>Apply: <a href=\"https:&#x2F;&#x2F;forms.office.com&#x2F;Pages&#x2F;ResponsePage.aspx?id=bw3hQziC60OaWhxZPOZz0DFoli8FFMdBhL1fGTrUdqpUNUhGOVMwMFFRMk5CQ1RaRUJVUzY1R1dCRC4u\" rel=\"nofollow\">https:&#x2F;&#x2F;forms.office.com&#x2F;Pages&#x2F;ResponsePage.aspx?id=bw3hQziC...</a><p>We respond to qualified applicants within one week. No DMs — please apply through the form.",
     "autor": "rdeadvisors",
     "datum": "2026-04-10T01:41:53Z"
@@ -424,11 +304,5 @@
     "text": "Coder | <a href=\"https:&#x2F;&#x2F;coder.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;coder.com&#x2F;</a> | Multiple roles | Multiple locations | Full-time<p>Coder is an AI software development company leading the future of autonomous coding. We empower teams to build software faster, more securely, and at scale through the collaboration of AI coding agents and human developers. Our mission is to make agentic AI a safe, trusted, and integral part of every software development lifecycle.<p>Coder’s self-hosted Agentic Development Environment (ADE) is the foundation for deploying agentic AI in the enterprise. It provides a secure, standardized, and governed workspace to deploy autonomous coding agents alongside human developers, accelerating innovation while maintaining control and compliance. Coder&#x27;s isolated, policy-driven environments improve productivity, cut cloud costs, and reduce data risks. Developers transition to AI at their own pace using their own tools. Platform and security teams can govern, audit, and manage a great developer experience at scale.<p>We passed 100k stars on GitHub! <a href=\"https:&#x2F;&#x2F;github.com&#x2F;coder\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;coder</a><p>All positions are fully remote in the countries listed unless otherwise specified.<p>[1] Senior Software Engineer, Core Platform (back-end Go) - US&#x2F;Canada<p>[2] Software Engineer, Core Platform (back-end Go) - US&#x2F;Canada<p>[3] Software Engineering Manager - UK&#x2F;Ireland&#x2F;Poland<p>[4] Product Designer - US East Coast&#x2F;UK&#x2F;Ireland&#x2F;Poland<p>And more! Apply here + job descriptions, salary bands: <a href=\"https:&#x2F;&#x2F;coder.com&#x2F;careers?utm_source=O2n5Ew72WD\" rel=\"nofollow\">https:&#x2F;&#x2F;coder.com&#x2F;careers?utm_source=O2n5Ew72WD</a><p>Not all of our jobs are listed here. Please note that you must submit an application to be considered for any of our positions. If you have any questions, please reach out to careers@coder.com.",
     "autor": "connorb-coder",
     "datum": "2026-04-09T21:46:25Z"
-  },
-  {
-    "thread_id": "47601859",
-    "text": "there is no career page or relevant url to apply this in <a href=\"https:&#x2F;&#x2F;www.kredit.fyi&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.kredit.fyi&#x2F;</a>",
-    "autor": "newresearcher33",
-    "datum": "2026-04-09T20:31:32Z"
   }
 ]
