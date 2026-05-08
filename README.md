@@ -12,10 +12,15 @@ The AI job market moves fast. This tool makes the signal visible.
 
 ## Stack
 
-- Python · Pandas · NLP
+- Python · Pandas · Requests
+- NLP (in progress)
 - Streamlit (dashboard)
-- Data: AI/ML job postings
+- Data: HackerNews "Who is Hiring" — live via API
 
 ## Status
 
-🔧 In active development — Phase 1: data collection and EDA
+🔧 In active development — Phase 2: automated data collection
+
+- ✅ Phase 1: EDA on manual data, skill extraction, visualization
+- 🔧 Phase 2: HackerNews API integration, automated collection
+- ⬜ Phase 3: NLP extraction, Streamlit dashboard, deployment
