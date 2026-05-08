@@ -3,13 +3,40 @@ import json
 import time
 import os
 
+from datetime import datetime, timezone
+
+def ist_aktuell(datum_str, max_monate=6):
+    datum = datetime.fromisoformat(datum_str.replace("Z", "+00:00"))
+    jetzt = datetime.now(timezone.utc)
+    differenz = (jetzt - datum).days
+    return differenz < (max_monate * 30)
+
 BASE_URL = "https://hn.algolia.com/api/v1"
 
 def hole_hiring_threads(anzahl=3):
-    url = f"{BASE_URL}/search?query=Ask+HN+Who+is+Hiring&tags=story&hitsPerPage={anzahl}"
+    url = "https://hacker-news.firebaseio.com/v0/user/whoishiring.json"
     res = requests.get(url)
-    hits = res.json()["hits"]
-    return [(h["objectID"], h["title"]) for h in hits]
+    daten = res.json()
+    submitted = daten.get("submitted", [])
+    
+    threads = []
+    for story_id in submitted[:20]:
+        story_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
+        story = requests.get(story_url).json()
+        titel = story.get("title", "")
+        datum = story.get("time", 0)
+        if "hiring" in titel.lower():
+            from datetime import datetime, timezone
+            datum_dt = datetime.fromtimestamp(datum, tz=timezone.utc)
+            jetzt = datetime.now(timezone.utc)
+            if (jetzt - datum_dt).days < 180:
+                threads.append((str(story_id), titel))
+                print(f"Gefunden: {titel}")
+        time.sleep(0.1)
+        if len(threads) >= anzahl:
+            break
+    
+    return threads
 
 def hole_stellenanzeigen(thread_id, max_anzeigen=100):
     url = f"{BASE_URL}/search?tags=comment,story_{thread_id}&hitsPerPage={max_anzeigen}"
