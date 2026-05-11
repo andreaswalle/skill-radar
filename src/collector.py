@@ -74,8 +74,25 @@ def sammle_daten(anzahl_threads=3, max_pro_thread=100):
     
     return alle_anzeigen
 
+def sammle_von_ids(thread_ids, max_pro_thread=100):
+    alle_anzeigen = []
+    for thread_id in thread_ids:
+        print(f"  → Thread {thread_id}")
+        anzeigen = hole_stellenanzeigen(thread_id, max_pro_thread)
+        alle_anzeigen.extend(anzeigen)
+        print(f"     {len(anzeigen)} Anzeigen gefunden")
+        time.sleep(1)
+    return alle_anzeigen
+
 if __name__ == "__main__":
-    daten = sammle_daten(anzahl_threads=2, max_pro_thread=50)
+    thread_ids = ['40224213', '40846428', '42919502', '41425910', '39217310', 
+                  '38842977', '45800465', '40563283', '43243024', '42297424',
+                  '41129813', '42017580', '39894820', '44159528', '39562986',
+                  '41709301', '46466074', '42575537', '46857488', '46108941',
+                  '47975571', '47601859', '43547611', '44434576', '45093192',
+                  '43858554', '47219668', '45438503', '44757794', '39886586', '40548216']
+    
+    daten = sammle_von_ids(thread_ids, max_pro_thread=100)
     print(f"\nGesamt: {len(daten)} Stellenanzeigen")
     
     os.makedirs("data/raw", exist_ok=True)
