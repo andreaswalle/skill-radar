@@ -75,7 +75,7 @@ docs/_build/
 .pybuilder/
 target/
 
-# Generierte Daten — können via collector.py neu erzeugt werden
+# Generated data — can be recreated via collector.py
 data/raw/*.json
 
 # Jupyter Notebook

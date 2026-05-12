@@ -6,127 +6,127 @@ import os
 from datetime import datetime, timezone
 
 BASE_URL = "https://hn.algolia.com/api/v1"
-DATEN_PFAD = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "hn_jobs.json")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "hn_jobs.json")
 
 
-# --- Deduplizierung ---
+# --- Deduplication ---
 
-def lade_bestehende(pfad):
-    """Lädt bestehende Daten oder gibt leere Liste zurück."""
-    pfad = os.path.normpath(pfad)
-    if not os.path.exists(pfad):
+def load_existing(path):
+    """Load existing data from disk, or return an empty list."""
+    path = os.path.normpath(path)
+    if not os.path.exists(path):
         return []
-    with open(pfad, encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
-def dedupliziere(bestehende, neue):
-    """Merged neue Einträge in bestehende, ohne Duplikate.
+def merge_unique(existing, new_entries):
+    """Merge new entries into existing data, skipping duplicates.
 
-    Schlüssel: (thread_id, autor) — jeder Autor postet pro Thread
-    maximal eine Stellenanzeige.
+    Key: (thread_id, author) — each author posts at most one
+    job listing per thread.
     """
-    bekannte = {(e["thread_id"], e["autor"]) for e in bestehende}
-    hinzugefuegt = 0
+    known_keys = {(e["thread_id"], e["author"]) for e in existing}
+    added = 0
 
-    for eintrag in neue:
-        schluessel = (eintrag["thread_id"], eintrag["autor"])
-        if schluessel not in bekannte:
-            bestehende.append(eintrag)
-            bekannte.add(schluessel)
-            hinzugefuegt += 1
+    for entry in new_entries:
+        key = (entry["thread_id"], entry["author"])
+        if key not in known_keys:
+            existing.append(entry)
+            known_keys.add(key)
+            added += 1
 
-    return bestehende, hinzugefuegt
-
-
-def speichere(daten, pfad):
-    """Speichert Daten als JSON."""
-    pfad = os.path.normpath(pfad)
-    os.makedirs(os.path.dirname(pfad), exist_ok=True)
-    with open(pfad, "w", encoding="utf-8") as f:
-        json.dump(daten, f, indent=2, ensure_ascii=False)
+    return existing, added
 
 
-# --- API-Zugriffe ---
+def save(data, path):
+    """Save data as JSON."""
+    path = os.path.normpath(path)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
-def hole_hiring_threads(anzahl=3, max_alter_tage=180):
-    """Holt aktuelle 'Who is Hiring'-Threads von HackerNews."""
+
+# --- API access ---
+
+def fetch_hiring_threads(count=3, max_age_days=180):
+    """Fetch recent 'Who is Hiring' threads from HackerNews."""
     url = "https://hacker-news.firebaseio.com/v0/user/whoishiring.json"
     res = requests.get(url)
-    daten = res.json()
-    submitted = daten.get("submitted", [])
+    data = res.json()
+    submitted = data.get("submitted", [])
 
     threads = []
     for story_id in submitted[:50]:
         story_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
         story = requests.get(story_url).json()
-        titel = story.get("title", "")
-        datum = story.get("time", 0)
-        if "hiring" in titel.lower():
-            datum_dt = datetime.fromtimestamp(datum, tz=timezone.utc)
-            jetzt = datetime.now(timezone.utc)
-            if (jetzt - datum_dt).days < max_alter_tage:
-                threads.append((str(story_id), titel))
-                print(f"  Gefunden: {titel}")
+        title = story.get("title", "")
+        timestamp = story.get("time", 0)
+        if "hiring" in title.lower():
+            posted = datetime.fromtimestamp(timestamp, tz=timezone.utc)
+            now = datetime.now(timezone.utc)
+            if (now - posted).days < max_age_days:
+                threads.append((str(story_id), title))
+                print(f"  Found: {title}")
         time.sleep(0.1)
-        if len(threads) >= anzahl:
+        if len(threads) >= count:
             break
 
     return threads
 
 
-def hole_stellenanzeigen(thread_id, max_anzeigen=100):
-    """Holt Top-Level-Kommentare (= Stellenanzeigen) aus einem Thread."""
-    url = f"{BASE_URL}/search?tags=comment,story_{thread_id}&hitsPerPage={max_anzeigen}"
+def fetch_job_postings(thread_id, max_posts=100):
+    """Fetch top-level comments (= job postings) from a thread."""
+    url = f"{BASE_URL}/search?tags=comment,story_{thread_id}&hitsPerPage={max_posts}"
     res = requests.get(url)
     hits = res.json()["hits"]
 
-    anzeigen = []
+    postings = []
     for hit in hits:
         text = hit.get("comment_text", "")
         parent_id = hit.get("parent_id")
         story_id = hit.get("story_id")
 
         if text and len(text) > 100 and parent_id == story_id:
-            anzeigen.append({
+            postings.append({
                 "thread_id": thread_id,
                 "text": text,
-                "autor": hit.get("author", ""),
-                "datum": hit.get("created_at", "")
+                "author": hit.get("author", ""),
+                "date": hit.get("created_at", "")
             })
         time.sleep(0.05)
 
-    return anzeigen
+    return postings
 
 
-# --- Sammel-Funktionen ---
+# --- Collection ---
 
-def sammle_daten(anzahl_threads=3, max_pro_thread=100):
-    """Sammelt Stellenanzeigen aus den neuesten Hiring-Threads."""
-    print("Hole Hiring-Threads...")
-    threads = hole_hiring_threads(anzahl_threads)
+def collect(num_threads=3, max_per_thread=100):
+    """Collect job postings from the latest hiring threads."""
+    print("Fetching hiring threads...")
+    threads = fetch_hiring_threads(num_threads)
 
-    alle_anzeigen = []
-    for thread_id, titel in threads:
-        print(f"  → {titel}")
-        anzeigen = hole_stellenanzeigen(thread_id, max_pro_thread)
-        alle_anzeigen.extend(anzeigen)
-        print(f"     {len(anzeigen)} Anzeigen gefunden")
+    all_postings = []
+    for thread_id, title in threads:
+        print(f"  → {title}")
+        postings = fetch_job_postings(thread_id, max_per_thread)
+        all_postings.extend(postings)
+        print(f"     {len(postings)} postings found")
         time.sleep(1)
 
-    return alle_anzeigen
+    return all_postings
 
 
-def sammle_von_ids(thread_ids, max_pro_thread=100):
-    """Sammelt Stellenanzeigen aus einer Liste von Thread-IDs."""
-    alle_anzeigen = []
+def collect_from_ids(thread_ids, max_per_thread=100):
+    """Collect job postings from a list of thread IDs."""
+    all_postings = []
     for thread_id in thread_ids:
         print(f"  → Thread {thread_id}")
-        anzeigen = hole_stellenanzeigen(thread_id, max_pro_thread)
-        alle_anzeigen.extend(anzeigen)
-        print(f"     {len(anzeigen)} Anzeigen gefunden")
+        postings = fetch_job_postings(thread_id, max_per_thread)
+        all_postings.extend(postings)
+        print(f"     {len(postings)} postings found")
         time.sleep(1)
-    return alle_anzeigen
+    return all_postings
 
 
 if __name__ == "__main__":
@@ -137,19 +137,19 @@ if __name__ == "__main__":
                   '47975571', '47601859', '43547611', '44434576', '45093192',
                   '43858554', '47219668', '45438503', '44757794', '39886586', '40548216']
 
-    # Bestehende Daten laden
-    bestehende = lade_bestehende(DATEN_PFAD)
-    print(f"Bestehende Einträge: {len(bestehende)}")
+    # Load existing data
+    existing = load_existing(DATA_PATH)
+    print(f"Existing entries: {len(existing)}")
 
-    # Neue Daten sammeln
-    neue = sammle_von_ids(thread_ids, max_pro_thread=100)
-    print(f"\nNeu gesammelt: {len(neue)} Stellenanzeigen")
+    # Collect new data
+    new_entries = collect_from_ids(thread_ids, max_per_thread=100)
+    print(f"\nNewly collected: {len(new_entries)} postings")
 
-    # Mergen und deduplizieren
-    gesamt, hinzugefuegt = dedupliziere(bestehende, neue)
-    print(f"Davon neu: {hinzugefuegt}")
-    print(f"Gesamt nach Merge: {len(gesamt)}")
+    # Merge and deduplicate
+    total, added = merge_unique(existing, new_entries)
+    print(f"New entries added: {added}")
+    print(f"Total after merge: {len(total)}")
 
-    # Speichern
-    speichere(gesamt, DATEN_PFAD)
-    print(f"Gespeichert: {DATEN_PFAD}")
+    # Save
+    save(total, DATA_PATH)
+    print(f"Saved: {DATA_PATH}")

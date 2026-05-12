@@ -19,10 +19,6 @@ The AI job market moves fast. This tool makes the signal visible.
 
 ## Status
 
-🔧 In active development — Phase 3:  NLP extraction, Streamlit dashboard, deployment
-
-## Status
-
 - ✅ Phase 1: EDA on manual data, skill extraction, visualization
 - ✅ Phase 2: HackerNews API integration, automated collection (1,517 job postings, 31 threads)
 - 🔧 Phase 3: NLP extraction, Streamlit dashboard, deployment
