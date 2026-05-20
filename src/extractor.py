@@ -116,10 +116,13 @@ if __name__ == "__main__":
         jobs = json.load(f)
 
     # --- Toggle: run discovery OR extraction ---
-    MODE = "discover"   # switch to "extract" once SKILLS is filled
+    MODE = "extract"   # switch to "extract" once SKILLS is filled
 
     if MODE == "discover":
         discover(jobs)
     else:
         results = extract_all(jobs)
-        # save to data/processed/hn_jobs_skills.json
+        for job in results:
+            job["skills"] = list(job["skills"])  # convert set to list for JSON serialization
+        with open("data/processed/extracted_skills.json", "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
