@@ -32,6 +32,11 @@ ALIASES = {
     "ml": "machine learning",
     "genai": "generative AI",
     "gen ai": "generative AI",
+    "Typescript": "TypeScript",
+    "typescript": "TypeScript", 
+    "security": "Security",
+    "go": "Go",
+    "golang": "Go",
 }
 
 
