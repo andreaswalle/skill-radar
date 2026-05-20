@@ -2,6 +2,7 @@ import spacy
 import json
 from collections import Counter
 from sklearn.feature_extraction.text import CountVectorizer
+from spacy.matcher import PhraseMatcher
 
 # --- Phase B: Skill Taxonomy (filled AFTER discovery) ---
 SKILLS = {
@@ -79,18 +80,35 @@ def discover(jobs):
 # === PHASE B: EXTRACTION ===
 
 def build_matcher(nlp, skills):
-    """Build a PhraseMatcher from the skill taxonomy."""
-    pass
+    """Build a PhraseMatcher for the given skills."""
+    matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
+    for category, skill_list in skills.items():
+        patterns = [nlp.make_doc(skill) for skill in skill_list]
+        matcher.add(category, patterns)
+    return matcher
 
 
 def extract_skills(text, nlp, matcher):
-    """Extract and normalize skills from a single text."""
-    pass
+    """Extract skills from text using the matcher."""
+    doc = nlp(text)
+    matches = matcher(doc)
+    found_skills = set()
+    for match_id, start, end in matches:
+        category = nlp.vocab.strings[match_id]
+        skill = doc[start:end].text
+        # apply alias mapping
+        skill_normalized = ALIASES.get(skill.lower(), skill)
+        found_skills.add((category, skill_normalized))
+    return found_skills
 
 
 def extract_all(jobs):
     """Run extraction on all job postings."""
-    pass
+    nlp = spacy.load("en_core_web_sm")
+    matcher = build_matcher(nlp, SKILLS)
+    for job in jobs:
+        job["skills"] = extract_skills(job["text_clean"], nlp, matcher)
+    return jobs
 
 
 if __name__ == "__main__":
