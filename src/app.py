@@ -12,6 +12,8 @@ with open("data/processed/skill_trends.json", encoding="utf-8") as f:
     by_month = json.load(f)
 
 st.header("Top 20 (2024-2025)")
+st.title("SkillRadar — HN Job Market Analysis")
+st.caption("Based on 1,517 job postings from HackerNews 'Who is Hiring' (Jan 2024 – May 2026)")
 top20 = skill_counts[:20]
 skills = [item[0] for item in top20]
 counts = [item[1] for item in top20]
