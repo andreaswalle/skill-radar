@@ -1,31 +1,31 @@
 [
   [
     "React",
-    307
+    308
   ],
   [
     "Python",
-    303
+    305
   ],
   [
     "TypeScript",
-    294
+    296
   ],
   [
     "AWS",
-    228
+    230
   ],
   [
     "Go",
-    136
+    137
   ],
   [
     "Rust",
-    94
+    95
   ],
   [
     "DevOps",
-    93
+    94
   ],
   [
     "LLMs",
@@ -45,7 +45,7 @@
   ],
   [
     "GCP",
-    86
+    87
   ],
   [
     "PostgreSQL",
@@ -53,15 +53,15 @@
   ],
   [
     "Docker",
-    76
+    78
   ],
   [
     "Next.js",
-    67
+    68
   ],
   [
     "GitHub",
-    64
+    65
   ],
   [
     "Linux",
@@ -73,11 +73,11 @@
   ],
   [
     "data pipelines",
-    56
+    57
   ],
   [
     "Java",
-    55
+    56
   ],
   [
     "machine learning",
@@ -92,11 +92,11 @@
     51
   ],
   [
-    "Machine Learning",
-    50
+    "SQL",
+    51
   ],
   [
-    "SQL",
+    "Machine Learning",
     50
   ],
   [
@@ -137,14 +137,14 @@
   ],
   [
     "observability",
-    35
-  ],
-  [
-    "scalability",
-    33
+    36
   ],
   [
     "Redis",
+    34
+  ],
+  [
+    "scalability",
     33
   ],
   [
@@ -156,11 +156,11 @@
     29
   ],
   [
-    "python",
-    25
+    "RAG",
+    26
   ],
   [
-    "RAG",
+    "python",
     25
   ],
   [
@@ -172,11 +172,11 @@
     23
   ],
   [
-    "Javascript",
-    22
+    "data science",
+    23
   ],
   [
-    "data science",
+    "Javascript",
     22
   ],
   [
@@ -184,12 +184,12 @@
     22
   ],
   [
-    "Tailwind",
+    "Snowflake",
     21
   ],
   [
-    "Snowflake",
-    20
+    "Tailwind",
+    21
   ],
   [
     "Kafka",
@@ -228,6 +228,10 @@
     15
   ],
   [
+    "Datadog",
+    14
+  ],
+  [
     "deep learning",
     14
   ],
@@ -240,11 +244,11 @@
     14
   ],
   [
-    "Datadog",
-    13
+    "Computer Vision",
+    12
   ],
   [
-    "Computer Vision",
+    "Data Science",
     11
   ],
   [
@@ -253,10 +257,6 @@
   ],
   [
     "TensorFlow",
-    10
-  ],
-  [
-    "Data Science",
     10
   ],
   [
@@ -300,11 +300,11 @@
     7
   ],
   [
-    "LangChain",
+    "fine-tuning",
     7
   ],
   [
-    "fine-tuning",
+    "LangChain",
     7
   ],
   [
