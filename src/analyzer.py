@@ -35,7 +35,7 @@ counts = [item[1] for item in top20]
 plt.figure(figsize=(12, 6))
 plt.barh(skills[::-1], counts[::-1], color="skyblue")
 plt.xlabel("Mentions")
-plt.title("Top 20 Skills in HN Who's Hiring (2024-2025)")
+plt.title("Top 20 Skills in HN Who's Hiring (2024-2026)")
 plt.tight_layout()
 plt.savefig("data/processed/top20_skills.png", dpi=150)
 plt.show()
