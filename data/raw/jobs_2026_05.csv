@@ -1,6 +1,0 @@
-title,company,location,remote,description
-"AI & Machine Learning Engineer","Computer Futures","Deutschlandweit",True,"LLMs, LangChain, LangGraph, Prompt Engineering, Modell-Orchestrierung"
-"Remote Applied AI Engineer","Amigo","Europe",True,"Python, typing, external APIs, LLMs, prompt engineering, reliability systems"
-"KI-Entwickler","rumble GmbH","Dortmund",False,"KI-APIs, Automatisierungsplattformen, Machine Learning, LLMs, Workflow-Optimierung"
-"AI Data Engineer","Bechtle AG","Neckarsulm",True,"Python, Docker, Kubernetes, REST-APIs, CI/CD, LLMs, RAG, Function Calling, Multi-Agenten"
-"AI Engineer","Akkodis","München",False,"LLMs, Multi-Agenten, RAG, LangChain, GitHub Copilot, Cursor, Software-Entwicklung"
