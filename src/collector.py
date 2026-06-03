@@ -9,8 +9,6 @@ BASE_URL = "https://hn.algolia.com/api/v1"
 DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "hn_jobs.json")
 
 
-# --- Deduplication ---
-
 def load_existing(path):
     """Load existing data from disk, or return an empty list."""
     path = os.path.normpath(path)
@@ -48,6 +46,47 @@ def save(data, path):
 
 
 # --- API access ---
+
+def fetch_all_thread_ids(from_date="2024-01-01", to_date=None):
+    """Fetch all 'Who is Hiring' thread IDs within a date range."""
+    url = "https://hacker-news.firebaseio.com/v0/user/whoishiring.json"
+    res = requests.get(url)
+    submitted = res.json().get("submitted", [])
+
+    from_dt = datetime.fromisoformat(from_date).replace(tzinfo=timezone.utc)
+    to_dt = datetime.now(timezone.utc) if to_date is None else datetime.fromisoformat(to_date).replace(tzinfo=timezone.utc)
+
+    thread_ids = []
+    for story_id in submitted:
+        story_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
+        story = requests.get(story_url).json()
+        title = story.get("title", "")
+        timestamp = story.get("time", 0)
+        posted = datetime.fromtimestamp(timestamp, tz=timezone.utc)
+
+        if posted < from_dt:
+            break  # No need to check older stories
+        
+        if "hiring" in title.lower() and from_dt <= posted <= to_dt:
+            thread_ids.append(str(story_id))
+            print(f"  Found: {title} ({posted.strftime('%Y-%m')})")
+        
+        time.sleep(0.1)
+
+    return thread_ids
+
+    thread_ids = []
+    for hit in hits:
+        title = hit.get("title", "")
+        created_at = hit.get("created_at", "")
+        if "hiring" in title.lower():
+            created_date = datetime.fromisoformat(created_at[:-1])
+            if from_date <= created_date.strftime("%Y-%m-%d") <= (to_date or datetime.now().strftime("%Y-%m-%d")):
+                thread_ids.append(str(hit["objectID"]))
+                print(f"  Found: {title} ({created_at})")
+        time.sleep(0.1)
+
+    return thread_ids
 
 def fetch_hiring_threads(count=3, max_age_days=180):
     """Fetch recent 'Who is Hiring' threads from HackerNews."""
@@ -130,22 +169,16 @@ def collect_from_ids(thread_ids, max_per_thread=100):
 
 
 if __name__ == "__main__":
-    thread_ids = ['40224213', '40846428', '42919502', '41425910', '39217310',
-                  '38842977', '45800465', '40563283', '43243024', '42297424',
-                  '41129813', '42017580', '39894820', '44159528', '39562986',
-                  '41709301', '46466074', '42575537', '46857488', '46108941',
-                  '47975571', '47601859', '43547611', '44434576', '45093192',
-                  '43858554', '47219668', '45438503', '44757794', '39886586', '40548216']
+    print("Fetching thread IDs (2024-01-01 to now)...")
+    thread_ids = fetch_all_thread_ids(from_date="2024-01-01")
+    print(f"Total threads found: {len(thread_ids)}")
 
-    # Load existing data
     existing = load_existing(DATA_PATH)
     print(f"Existing entries: {len(existing)}")
 
-    # Collect new data
     new_entries = collect_from_ids(thread_ids, max_per_thread=100)
     print(f"\nNewly collected: {len(new_entries)} postings")
 
-    # Merge and deduplicate
     total, added = merge_unique(existing, new_entries)
     print(f"New entries added: {added}")
     print(f"Total after merge: {len(total)}")
