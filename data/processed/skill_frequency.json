@@ -1,46 +1,50 @@
 [
   [
-    "React",
-    308
+    "Python",
+    319
   ],
   [
-    "Python",
-    305
+    "React",
+    318
   ],
   [
     "TypeScript",
-    296
+    304
   ],
   [
     "AWS",
-    230
+    236
   ],
   [
     "Go",
-    137
+    143
   ],
   [
     "Rust",
-    95
+    101
   ],
   [
     "DevOps",
-    94
-  ],
-  [
-    "LLMs",
-    92
+    100
   ],
   [
     "Kubernetes",
-    92
+    97
+  ],
+  [
+    "LLMs",
+    94
   ],
   [
     "Node.js",
-    89
+    94
   ],
   [
     "React Native",
+    92
+  ],
+  [
+    "PostgreSQL",
     88
   ],
   [
@@ -48,27 +52,27 @@
     87
   ],
   [
-    "PostgreSQL",
-    85
-  ],
-  [
     "Docker",
-    78
+    84
   ],
   [
     "Next.js",
-    68
+    73
   ],
   [
     "GitHub",
-    65
+    69
   ],
   [
     "Linux",
-    60
+    61
   ],
   [
     "C++",
+    60
+  ],
+  [
+    "Java",
     57
   ],
   [
@@ -76,23 +80,27 @@
     57
   ],
   [
-    "Java",
-    56
+    "Terraform",
+    54
   ],
   [
     "machine learning",
     54
   ],
   [
-    "Terraform",
-    51
-  ],
-  [
     "JavaScript",
-    51
+    53
   ],
   [
     "SQL",
+    53
+  ],
+  [
+    "CI/CD",
+    52
+  ],
+  [
+    "SRE",
     51
   ],
   [
@@ -100,47 +108,43 @@
     50
   ],
   [
-    "SRE",
-    49
+    "Ruby",
+    46
   ],
   [
-    "CI/CD",
-    48
+    "GraphQL",
+    46
+  ],
+  [
+    "Django",
+    46
   ],
   [
     "Azure",
     46
   ],
   [
-    "GraphQL",
-    44
-  ],
-  [
-    "Django",
-    44
-  ],
-  [
-    "Ruby",
+    "Android",
     43
   ],
   [
-    "Android",
-    41
+    "observability",
+    42
+  ],
+  [
+    "distributed systems",
+    40
   ],
   [
     "Rails",
     39
   ],
   [
-    "distributed systems",
-    37
-  ],
-  [
-    "observability",
-    36
-  ],
-  [
     "Redis",
+    35
+  ],
+  [
+    "FastAPI",
     34
   ],
   [
@@ -148,31 +152,31 @@
     33
   ],
   [
-    "FastAPI",
-    33
+    "AI agents",
+    31
   ],
   [
-    "AI agents",
-    29
+    "python",
+    26
   ],
   [
     "RAG",
     26
   ],
   [
-    "python",
-    25
+    "PyTorch",
+    24
+  ],
+  [
+    "data science",
+    24
   ],
   [
     "MySQL",
     23
   ],
   [
-    "PyTorch",
-    23
-  ],
-  [
-    "data science",
+    "Tailwind",
     23
   ],
   [
@@ -185,10 +189,6 @@
   ],
   [
     "Snowflake",
-    21
-  ],
-  [
-    "Tailwind",
     21
   ],
   [
@@ -208,11 +208,11 @@
     19
   ],
   [
-    "react",
-    17
+    "OpenAI",
+    18
   ],
   [
-    "OpenAI",
+    "react",
     17
   ],
   [
@@ -245,7 +245,7 @@
   ],
   [
     "Computer Vision",
-    12
+    13
   ],
   [
     "Data Science",
@@ -253,6 +253,10 @@
   ],
   [
     "terraform",
+    11
+  ],
+  [
+    "Generative AI",
     11
   ],
   [
@@ -264,10 +268,6 @@
     10
   ],
   [
-    "Generative AI",
-    10
-  ],
-  [
     "git",
     9
   ],
@@ -276,11 +276,27 @@
     9
   ],
   [
+    "github",
+    9
+  ],
+  [
     "Observability",
     9
   ],
   [
-    "github",
+    "Distributed Systems",
+    9
+  ],
+  [
+    "Anthropic",
+    8
+  ],
+  [
+    "LangChain",
+    8
+  ],
+  [
+    "fine-tuning",
     8
   ],
   [
@@ -292,19 +308,7 @@
     7
   ],
   [
-    "Distributed Systems",
-    7
-  ],
-  [
     "AI Agents",
-    7
-  ],
-  [
-    "fine-tuning",
-    7
-  ],
-  [
-    "LangChain",
     7
   ],
   [
@@ -317,10 +321,6 @@
   ],
   [
     "Bedrock",
-    6
-  ],
-  [
-    "Anthropic",
     6
   ],
   [
