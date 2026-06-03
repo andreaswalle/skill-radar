@@ -3,21 +3,15 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-#dynamic metadata from the data
-with open("data/raw/hn_jobs.json", encoding="utf-8") as f:
-    raw = json.load(f)
-
-total = len(raw)
-dates = [entry["date"][:7] for entry in raw if entry.get("date")]
-date_from = min(dates)
-date_to = max(dates)
+with open("data/metadata.json", encoding="utf-8") as f:
+    meta = json.load(f)
 
 def fmt_month(ym):
     dt = pd.to_datetime(ym)
     return dt.strftime("%b %Y")
 
 st.title("SkillRadar - Tech Skill Analysis")
-st.caption(f"Based on {total:,} job postings from HackerNews 'Who is Hiring' ({fmt_month(date_from)} – {fmt_month(date_to)})")
+st.caption(f"Based on {meta['total_postings']:,} job postings from HackerNews 'Who is Hiring' ({fmt_month(meta['date_from'])} – {fmt_month(meta['date_to'])})")
 
 with open("data/processed/skill_frequency.json", encoding="utf-8") as f:
     skill_counts = json.load(f)
