@@ -6,6 +6,7 @@ steps = [
     ["python", "src/cleaner.py"],
     ["python", "src/extractor.py"],
     ["python", "src/analyzer.py"],
+    ["python", "src/update_metadata.py"],
 ]
 
 for step in steps:
