@@ -1,190 +1,206 @@
 [
   [
-    "Python",
-    319
+    "React",
+    353
   ],
   [
-    "React",
-    318
+    "Python",
+    340
   ],
   [
     "TypeScript",
-    304
+    337
   ],
   [
     "AWS",
-    236
+    265
   ],
   [
     "Go",
-    143
+    156
   ],
   [
     "Rust",
-    101
-  ],
-  [
-    "DevOps",
-    100
+    109
   ],
   [
     "Kubernetes",
-    97
-  ],
-  [
-    "LLMs",
-    94
+    107
   ],
   [
     "Node.js",
-    94
-  ],
-  [
-    "React Native",
-    92
+    107
   ],
   [
     "PostgreSQL",
-    88
+    106
+  ],
+  [
+    "LLMs",
+    104
+  ],
+  [
+    "DevOps",
+    103
+  ],
+  [
+    "React Native",
+    96
   ],
   [
     "GCP",
-    87
+    93
   ],
   [
     "Docker",
-    84
+    91
   ],
   [
     "Next.js",
-    73
+    82
   ],
   [
     "GitHub",
-    69
+    78
   ],
   [
     "Linux",
-    61
-  ],
-  [
-    "C++",
-    60
-  ],
-  [
-    "Java",
-    57
-  ],
-  [
-    "data pipelines",
-    57
+    69
   ],
   [
     "Terraform",
-    54
+    64
   ],
   [
-    "machine learning",
-    54
+    "C++",
+    63
   ],
   [
-    "JavaScript",
-    53
+    "Java",
+    62
+  ],
+  [
+    "data pipelines",
+    61
   ],
   [
     "SQL",
-    53
+    58
   ],
   [
     "CI/CD",
-    52
+    57
   ],
   [
-    "SRE",
-    51
+    "machine learning",
+    57
   ],
   [
-    "Machine Learning",
-    50
-  ],
-  [
-    "Ruby",
-    46
-  ],
-  [
-    "GraphQL",
-    46
-  ],
-  [
-    "Django",
-    46
+    "JavaScript",
+    54
   ],
   [
     "Azure",
-    46
+    54
   ],
   [
-    "Android",
-    43
+    "SRE",
+    53
   ],
   [
-    "observability",
-    42
+    "Machine Learning",
+    52
   ],
   [
-    "distributed systems",
-    40
+    "Ruby",
+    52
+  ],
+  [
+    "GraphQL",
+    50
   ],
   [
     "Rails",
-    39
+    49
+  ],
+  [
+    "Android",
+    47
+  ],
+  [
+    "observability",
+    45
+  ],
+  [
+    "Django",
+    45
+  ],
+  [
+    "distributed systems",
+    43
+  ],
+  [
+    "FastAPI",
+    40
+  ],
+  [
+    "AI agents",
+    38
+  ],
+  [
+    "scalability",
+    36
   ],
   [
     "Redis",
     35
   ],
   [
-    "FastAPI",
-    34
+    "RAG",
+    29
   ],
   [
-    "scalability",
-    33
+    "Grafana",
+    28
   ],
   [
-    "AI agents",
-    31
+    "Javascript",
+    25
+  ],
+  [
+    "Tailwind",
+    25
+  ],
+  [
+    "MySQL",
+    25
   ],
   [
     "python",
-    26
-  ],
-  [
-    "RAG",
-    26
+    25
   ],
   [
     "PyTorch",
     24
   ],
   [
+    "Kafka",
+    23
+  ],
+  [
+    "Prometheus",
+    23
+  ],
+  [
     "data science",
-    24
-  ],
-  [
-    "MySQL",
     23
   ],
   [
-    "Tailwind",
-    23
-  ],
-  [
-    "Javascript",
+    "OpenAI",
     22
   ],
   [
-    "Grafana",
+    "Git",
     22
   ],
   [
@@ -192,51 +208,39 @@
     21
   ],
   [
-    "Kafka",
-    20
-  ],
-  [
-    "Prometheus",
-    20
-  ],
-  [
     "Redux",
-    19
+    20
   ],
   [
-    "Git",
-    19
-  ],
-  [
-    "OpenAI",
-    18
-  ],
-  [
-    "react",
-    17
-  ],
-  [
-    "computer vision",
-    17
+    "Datadog",
+    20
   ],
   [
     "Vue.js",
+    19
+  ],
+  [
+    "computer vision",
+    19
+  ],
+  [
+    "NestJS",
+    18
+  ],
+  [
+    "Data Science",
     17
+  ],
+  [
+    "react",
+    16
   ],
   [
     "generative AI",
     15
   ],
   [
-    "Datadog",
-    14
-  ],
-  [
     "deep learning",
-    14
-  ],
-  [
-    "NestJS",
     14
   ],
   [
@@ -245,22 +249,22 @@
   ],
   [
     "Computer Vision",
-    13
-  ],
-  [
-    "Data Science",
-    11
+    12
   ],
   [
     "terraform",
     11
   ],
   [
-    "Generative AI",
-    11
+    "Bedrock",
+    10
   ],
   [
-    "TensorFlow",
+    "Observability",
+    10
+  ],
+  [
+    "github",
     10
   ],
   [
@@ -268,7 +272,15 @@
     10
   ],
   [
+    "Generative AI",
+    10
+  ],
+  [
     "git",
+    9
+  ],
+  [
+    "TensorFlow",
     9
   ],
   [
@@ -276,28 +288,24 @@
     9
   ],
   [
-    "github",
-    9
-  ],
-  [
-    "Observability",
-    9
-  ],
-  [
-    "Distributed Systems",
-    9
-  ],
-  [
-    "Anthropic",
-    8
-  ],
-  [
     "LangChain",
     8
   ],
   [
-    "fine-tuning",
+    "embeddings",
     8
+  ],
+  [
+    "Distributed Systems",
+    8
+  ],
+  [
+    "devops",
+    8
+  ],
+  [
+    "fine-tuning",
+    7
   ],
   [
     "rust",
@@ -312,19 +320,11 @@
     7
   ],
   [
-    "embeddings",
-    7
-  ],
-  [
-    "devops",
+    "Anthropic",
     6
   ],
   [
-    "Bedrock",
-    6
-  ],
-  [
-    "Pinecone",
+    "docker",
     5
   ],
   [
@@ -332,27 +332,11 @@
     5
   ],
   [
-    "react native",
-    4
+    "Pinecone",
+    5
   ],
   [
-    "Deep Learning",
-    4
-  ],
-  [
-    "Weaviate",
-    4
-  ],
-  [
-    "javascript",
-    4
-  ],
-  [
-    "Hugging Face",
-    4
-  ],
-  [
-    "docker",
+    "django",
     4
   ],
   [
@@ -360,19 +344,43 @@
     4
   ],
   [
-    "linux",
-    3
+    "Weaviate",
+    4
   ],
   [
-    "django",
-    3
+    "Hugging Face",
+    4
+  ],
+  [
+    "javascript",
+    4
+  ],
+  [
+    "Deep Learning",
+    4
+  ],
+  [
+    "react native",
+    4
   ],
   [
     "sql",
     3
   ],
   [
-    "gcp",
+    "linux",
+    3
+  ],
+  [
+    "Deep learning",
+    2
+  ],
+  [
+    "Langchain",
+    2
+  ],
+  [
+    "Machine learning",
     2
   ],
   [
@@ -380,11 +388,15 @@
     2
   ],
   [
+    "RUST",
+    2
+  ],
+  [
     "fastapi",
     2
   ],
   [
-    "Devops",
+    "gcp",
     2
   ],
   [
@@ -392,31 +404,27 @@
     2
   ],
   [
-    "RUST",
+    "Devops",
     2
   ],
   [
-    "next.js",
+    "redux",
     1
   ],
   [
-    "Data Pipelines",
+    "NestJs",
     1
   ],
   [
-    "Deep learning",
+    "kubernetes",
     1
   ],
   [
-    "java",
+    "node.js",
     1
   ],
   [
-    "Aws",
-    1
-  ],
-  [
-    "Langchain",
+    "Sre",
     1
   ],
   [
@@ -432,23 +440,11 @@
     1
   ],
   [
-    "ruby",
-    1
-  ],
-  [
     "sre",
     1
   ],
   [
     "DEVOPS",
-    1
-  ],
-  [
-    "kubernetes",
-    1
-  ],
-  [
-    "mysql",
     1
   ],
   [
@@ -460,27 +456,27 @@
     1
   ],
   [
-    "redux",
+    "java",
     1
   ],
   [
-    "Distributed systems",
+    "ruby",
     1
   ],
   [
-    "NestJs",
+    "next.js",
     1
   ],
   [
-    "Machine learning",
+    "Data Pipelines",
     1
   ],
   [
-    "node.js",
+    "mysql",
     1
   ],
   [
-    "Sre",
+    "Aws",
     1
   ]
 ]
